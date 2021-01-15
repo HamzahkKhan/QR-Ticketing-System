@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
+
+
+    <com.vipulasri.ticketview.TicketView
+        android:id="@+id/entryresult_Ticketview"
+        android:layout_width="340dp"
+        android:layout_height="420dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entryresult_Accp"
+        app:layout_constraintVertical_bias="0.218"
+        app:ticketDividerColor="@color/Red"
+        app:ticketDividerPadding="0dp"
+        app:ticketDividerType="dash"
+        app:ticketElevation="10dp"
+        app:ticketOrientation="horizontal"
+        app:ticketScallopPositionPercent="1"
+        app:ticketScallopRadius="10dp"
+        app:ticketShowBorder="false"
+        app:ticketShowDivider="true" />
+
+    <com.vipulasri.ticketview.TicketView
+        android:id="@+id/entryresult_Accp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14"
+        app:ticketDividerColor="@color/Red"
+        app:ticketDividerPadding="0dp"
+        app:ticketDividerType="dash"
+        app:ticketElevation="10dp"
+        app:ticketOrientation="vertical"
+        app:ticketScallopRadius="0dp"
+        app:ticketShowBorder="false"
+        app:ticketShowDivider="false" />
+
+    <TextView
+        android:id="@+id/entryresult_Accepted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_narrow"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="#3ACE3A"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/entryresult_Accp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/entryresult_Accp"
+        app:layout_constraintTop_toTopOf="@+id/entryresult_Accp"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <TextView
+        android:id="@+id/entryresult_hName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="Name:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/entryresult_Ticketview"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="@+id/entryresult_Ticketview"
+        app:layout_constraintTop_toTopOf="@+id/entryresult_Ticketview" />
+
+    <TextView
+        android:id="@+id/entryresult_Name"
+        android:layout_width="189dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="16dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/entryresult_hName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/entryresult_hName"
+        app:layout_constraintTop_toBottomOf="@+id/entryresult_hName" />
+
+    <TextView
+        android:id="@+id/entryresult_dDelegate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="Delegate:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/entryresult_hName"
+        app:layout_constraintEnd_toEndOf="@+id/entryresult_Ticketview"
+        app:layout_constraintHorizontal_bias="0.699"
+        app:layout_constraintStart_toEndOf="@+id/entryresult_hName"
+        app:layout_constraintTop_toTopOf="@+id/entryresult_hName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/entryresult_Delegate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="Foreign Delegate"
+        android:textSize="16dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/entryresult_dDelegate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/entryresult_dDelegate"
+        app:layout_constraintTop_toBottomOf="@+id/entryresult_dDelegate" />
+
+    <TextView
+        android:id="@+id/entryresult_hEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="E-mail:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/entryresult_Name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/entryresult_Name"
+        app:layout_constraintTop_toBottomOf="@+id/entryresult_Name" />
+
+    <TextView
+        android:id="@+id/entryresult_Email"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="TextView"
+        android:textSize="16dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/entryresult_Ticketview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/entryresult_hEmail"
+        app:layout_constraintTop_toBottomOf="@+id/entryresult_hEmail" />
+
+    <ProgressBar
+        android:id="@+id/entryresult_Loading"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.54" />
+
+    <TextView
+        android:id="@+id/entryresult_Qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/entryresult_Accp"
+        app:layout_constraintEnd_toEndOf="@+id/entryresult_Accepted"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/entryresult_Accepted"
+        app:layout_constraintTop_toTopOf="@+id/entryresult_Accp"
+        app:layout_constraintVertical_bias="0.851" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="351dp"
+        android:layout_height="375dp"
+        android:adjustViewBounds="true"
+        android:translationY="-10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/entryresult_Ticketview"
+        app:layout_constraintEnd_toEndOf="@+id/entryresult_Ticketview"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/entryresult_Ticketview"
+        app:layout_constraintTop_toBottomOf="@+id/entryresult_Email"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/footersw" />
+
+    <TextView
+        android:id="@+id/entryresult_Abs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="Abstract:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/entryresult_Ticketview"
+        app:layout_constraintEnd_toEndOf="@+id/entryresult_Ticketview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/entryresult_Email"
+        app:layout_constraintTop_toBottomOf="@+id/entryresult_Email"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="scanNow"
+        android:text="Scan Again"
+        android:textColor="#E0F2F1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.924"
+        tools:text="@string/scan_again" />
+
+    <TextView
+        android:id="@+id/entryresult_AbsShown"
+        android:layout_width="307dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="TextView"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/entryresult_Ticketview"
+        app:layout_constraintEnd_toEndOf="@+id/entryresult_Ticketview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/entryresult_Abs"
+        app:layout_constraintTop_toBottomOf="@+id/entryresult_Abs"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/entryresult_Diet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="Diet"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/entryresult_Ticketview"
+        app:layout_constraintEnd_toEndOf="@+id/entryresult_Delegate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/entryresult_Delegate"
+        app:layout_constraintTop_toBottomOf="@+id/entryresult_Delegate"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/entryresult_DietShown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="TextView"
+        android:textSize="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/entryresult_Ticketview"
+        app:layout_constraintEnd_toEndOf="@+id/entryresult_Ticketview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/entryresult_Diet"
+        app:layout_constraintTop_toBottomOf="@+id/entryresult_Diet"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/entryresult_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="Schedule:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/entryresult_Ticketview"
+        app:layout_constraintEnd_toEndOf="@+id/entryresult_Ticketview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/entryresult_AbsShown"
+        app:layout_constraintTop_toBottomOf="@+id/entryresult_AbsShown"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/entryresult_scheduleShown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_narrow"
+        android:text="TextView"
+        android:textSize="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/entryresult_Ticketview"
+        app:layout_constraintEnd_toEndOf="@+id/entryresult_AbsShown"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/entryresult_schedule"
+        app:layout_constraintTop_toBottomOf="@+id/entryresult_schedule"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

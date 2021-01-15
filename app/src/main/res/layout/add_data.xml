@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/add_data_Fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Fname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_data_Lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Lname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_data_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_data_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_data_Occu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Occupation"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_data_Work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Work"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/add_data_Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="add_data"
+        android:text="update" />
+</LinearLayout>

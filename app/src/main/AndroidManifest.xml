@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.qrcode">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".EntryResult"/>
+        <activity android:name=".MassGenrate"/>
+        <activity android:name=".Extras_NotInUse.add_data"/>
+        <activity android:name=".Extra_Features.updateoccu"/>
+        <activity android:name=".Extra_Features.updatework"/>
+        <activity android:name=".Extra_Features.updatephone"/>
+        <activity android:name=".Extra_Features.updatename"/>
+        <activity android:name=".Extra_Features.myaccount"/>
+        <activity android:name=".Extra_Features.showuserinfo"/>
+        <activity android:name=".Extra_Features.signin"/>
+        <activity android:name=".Extra_Features.existinguser" />
+        <activity android:name=".Extra_Features.newuser"/>
+        <activity android:name=".Extras_NotInUse.result"/>
+        <activity android:name=".Extras_NotInUse.test2" />
+        <activity android:name=".QrScanner"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Extras_NotInUse.data" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode"></meta-data>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

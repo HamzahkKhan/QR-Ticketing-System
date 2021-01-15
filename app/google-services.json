@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "684464891273",
+    "firebase_url": "https://cdsamm-cfe3e.firebaseio.com",
+    "project_id": "cdsamm-cfe3e",
+    "storage_bucket": "cdsamm-cfe3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684464891273:android:84dfd976f31cf5a0d96d58",
+        "android_client_info": {
+          "package_name": "com.example.qrcode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684464891273-s97dp4m1obvmslspbq070bcl2e109d9b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.qrcode",
+            "certificate_hash": "826a64aa5e7380b176bcd7f1e94c6aa62e1ea059"
+          }
+        },
+        {
+          "client_id": "684464891273-5rvj9pk71oq7tpo75dpi2qr18fl89pma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwE5671FkfDztD0YQyswcfgYr-T5cvihA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684464891273-5rvj9pk71oq7tpo75dpi2qr18fl89pma.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
